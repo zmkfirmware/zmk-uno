@@ -57,3 +57,29 @@ git submodule update --init
 ```
 
 To fetch the various footprint libraries used by the project.
+
+# Bill Of Materials
+
+| Quantity | Description                    | LCSC #           | Mfr Part Number                           |
+| -------- | ------------------------------ | ---------------- | ----------------------------------------- |
+| 3        | Kailh Hotswap Socket           | N/A              | CPG151101S11                              |
+| 3        | MX Switches                    |                  |                                           |
+| 1        | Rotary Encoder                 |                  | EC11                                      |
+| 4        | Diodes                         | C81598           | 1N4148W                                   |
+| 3        | Switch Mode Selection Headers  |                  | 1x8 2mm pitch pin headers                 |
+| 1        | Reset Button                   | C79174           | EVQPUC02K                                 |
+| 11       | Pin Jumpers For Mode Selection |                  | 2mm-pitch pin jumpers (e.g. SPN02SXCN-RC) |
+| 1        | LED Resistor                   |                  | 500Ω (0805)                               |
+| 1        | Power Cutoff Resistor          |                  | 2MΩ (0805)                                |
+| 1        | Power Cutoff MOSFET            | C15127           | AO3401A                                   |
+| 4        | Underglow RGB LEDs             | C2761795/C965555 | WS2812B/WS2812B-2020                      |
+| 3        | Per-Key RGB LEDs               | C9900001298      | SK6812MINI-E                              |
+| 1        | I2C Pullup Header              |                  | 1x2 2mm pitch pin headers                 |
+| 2        | I2C Pullup Resistors           |                  | 10kΩ (0805)                               |
+| 1        | 128x64 I2c OLED Module         |                  |                                           |
+| 1        | TRRS Pin Selection Header      |                  | 1x4 2mm pitch pin headers                 |
+| 2        | TRRS Pin Selection Headers     |                  | 1x2 2mm pitch pin headers                 |
+| 1        | TRRS Jack                      |                  | PJ320A                                    |
+| 1        | Latency Tester Resistor        |                  | 150Ω (0805)                               |
+| 1        | Latency Tester Optocoupler     |                  |                                           |
+
