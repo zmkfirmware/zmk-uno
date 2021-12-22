@@ -1,7 +1,7 @@
 # ZMK Uno
 
-[!ZMK Uno Front](./zmk-uno-front.png)
-[!ZMK Uno Back](./zmk-uno-back.png)
+![ZMK Uno Front](./zmk-uno-front.png)
+![ZMK Uno Back](./zmk-uno-back.png)
 
 The ZMK Uno shield is an OSH shield for the Arduino Uno Rev3 interface, making it compatible with any compatible dev kit, such as the Nordic 52840 DK, ST Nucleo 64 kits, etc.
 
