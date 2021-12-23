@@ -81,5 +81,5 @@ To fetch the various footprint libraries used by the project.
 | 2        | TRRS Pin Selection Headers     |                  | 1x2 2mm pitch pin headers                 |
 | 1        | TRRS Jack                      |                  | PJ320A                                    |
 | 1        | Latency Tester Resistor        |                  | 150Ω (0805)                               |
-| 1        | Latency Tester Optocoupler     |                  |                                           |
+| 1        | Latency Tester Optocoupler     | C106900          | EL817S1                                   |
 
