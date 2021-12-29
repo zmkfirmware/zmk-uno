@@ -2313,7 +2313,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a6aef059-5a9f-4a81-a2a4-678297ad7d41)
     )
-    (fp_text value "TRRS" (at 0 -5.6 90) (layer "F.Fab")
+    (fp_text value "TRRS" (at 0.025 13.275 -90) (layer "F.Mask")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0acf5207-dd79-49f1-8d0b-a23806cfadfa)
     )
