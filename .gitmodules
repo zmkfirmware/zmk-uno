@@ -4,6 +4,7 @@
 [submodule "Keebio-Parts.pretty"]
 	path = Keebio-Parts.pretty
 	url = https://github.com/keebio/Keebio-Parts.pretty.git
-[submodule "kicad-keyboard-parts.pretty"]
-	path = kicad-keyboard-parts.pretty
-	url = https://github.com/ebastler/kicad-keyboard-parts.pretty.git
+[submodule "marbastlib"]
+	path = marbastlib
+	url = https://github.com/ebastler/marbastlib.git
+	branch = untested

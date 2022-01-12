@@ -4,4 +4,6 @@
   (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/Keebio-Parts.pretty/")(options "")(descr ""))
   (lib (name "zmk-uno")(type "KiCad")(uri "${KIPRJMOD}/zmk-uno.pretty/")(options "")(descr ""))
   (lib (name "kicad-keyboard-parts")(type "KiCad")(uri "${KIPRJMOD}/kicad-keyboard-parts.pretty/")(options "")(descr ""))
+  (lib (name "marbastlib-mx")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/marbastlib-mx.pretty")(options "")(descr ""))
+  (lib (name "marbastlib-various")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/marbastlib-various.pretty")(options "")(descr ""))
 )
