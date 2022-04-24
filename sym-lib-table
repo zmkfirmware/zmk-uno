@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "marbastlib-mx")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/marbastlib-mx.kicad_sym")(options "")(descr ""))
+  (lib (name "marbastlib-various")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/marbastlib-various.kicad_sym")(options "")(descr ""))
+  (lib (name "zmk-uno")(type "KiCad")(uri "${KIPRJMOD}/zmk-uno.kicad_sym")(options "")(descr ""))
+)

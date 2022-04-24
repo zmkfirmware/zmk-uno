@@ -1,3 +1,6 @@
 *-bak
 *-cache*
 zmk-uno-backups/
+JLCPCB/
+zmk-uno_bom_jlc.csv
+zmk-uno_cpl_jlc.csv
