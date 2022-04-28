@@ -24,4 +24,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: jlc
-          path: zmk-uno-*.csv
+          path: zmk-uno_*jlc.csv
