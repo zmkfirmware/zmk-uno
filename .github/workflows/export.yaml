@@ -1,0 +1,27 @@
+name: Export
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  export:
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    container:
+      image: docker.io/setsoft/kicad_auto:dev_k6
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run kibot
+        run: kibot
+      - name: Archive Gerber ZIP
+        uses: actions/upload-artifact@v2
+        with:
+          name: jlc
+          path: JLCPCB/zmk-uno-JLCPCB.zip
+      - name: Archive Positions/BOM
+        uses: actions/upload-artifact@v2
+        with:
+          name: jlc
+          path: JLCPCB/zmk-uno-*.csv
