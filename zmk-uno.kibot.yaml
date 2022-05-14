@@ -29,6 +29,13 @@ variants:
     variant: rotated
     pre_transform: fix_rotation
 
+preflight:
+  set_text_variables:
+    - name: SHA1
+      command: git rev-parse --short HEAD
+    - name: TIMESTAMP
+      command: git log -1 --format='%as' -- $KIBOT_SCH_NAME
+
 outputs:
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
