@@ -30,23 +30,23 @@ A single EC11 encoder is included, allowing testing of encoder/sensor behavior i
 
 ## Power Cutoff
 
-Many wireless designs (e.g. nRFMicro, nice!nano) include the ability to cut off the VCC power to save power, especially for keyboards with addressable RGB LEDs which have a high quiescent current. The ZMK Uno shield includes a MOSFET design for the same VCC cutoff, to test this functionality.
+Many wireless designs (e.g. nRFMicro, nice!nano) include the ability to cut off the VCC power to save power, especially for keyboards with addressable RGB LEDs which have a high quiescent current. The ZMK Uno shield includes *two* MOSFETs, creating a toplevel "power domain" that both the SSD1306 OLED and second MOSFET are connected two. The second MOSFET is a "sub-power domain" of the first one, and contains the RGB LEDs for the underglow and per-key LEDs. Doing so allows testing more complex power domain scenarios, and allows you to cut power to the RGB while still allowing the OLED to stay powered. The second MOSFET can also be *ignored* since its default state is open, and you can treat the system as just having on toplevel power domain, which matches devices like the nice!nano, nRFMicro, etc.
 
 ## Display
 
 A standard header for the common SSD1306 i2c OLED modules is including, allowing testing of the ZMK display functionality.
 
-the display VCC pin is connected to the VCC line behind the power cufoff.
+The display VCC pin is connected to the VCC line behind the toplevel power-domain.
 
 ## LEDs
 
 Both underglow, and per-key RGB LEDs are included in the ZMK Uno shield. Currently, only underglow is supported by ZMK, but the per-key RGB hardware is included for possible future development/testing.
 
-All LED power pins are connected to the VCC line behind the power cufoff.
+All LED power pins are connected to the RGB sub-power domain for their power.
 
 ## TRRS
 
-ZMK does not currently support wired split designs, however to support any future efforst to add that support, the ZMK Uno includes a standard TRRS jack, which can be configured using pin jumpers to use either serial or I2C pins.
+ZMK does not currently support wired split designs, however to support any future efforst to add that support, the ZMK Uno includes a standard TRRS jack, which can be configured using pin jumpers to use either serial or I2C pins. In addition, an optional pull up can be enabled with a jumper, for testing single-wire half duplex serial mode.
 
 # Contributing
 
