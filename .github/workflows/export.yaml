@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Run kibot
-        run: kibot
+        run: kibot -vvv
       - name: Archive Gerber ZIP
         uses: actions/upload-artifact@v2
         with:
