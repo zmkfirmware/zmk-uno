@@ -13,8 +13,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Run kibot
-        run: kibot
+      - uses: INTI-CMNB/KiBot@v2_k6
+        with:
+          config: zmk-uno.kibot.yaml
       - name: Archive Gerber ZIP
         uses: actions/upload-artifact@v2
         with:
