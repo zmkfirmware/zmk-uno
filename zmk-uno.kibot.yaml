@@ -22,12 +22,37 @@ filters:
       - column: 'LCSC Part Number'
         regex: '^C\d+'
 
+  - name: mechanical_fixed
+    comment: 'Exclude mechanical, but fix for reverse mount LED'
+    type: generic
+    exclude_virtual: true
+    exclude_any:
+      - column: 'Ref'
+        regex: '^TP[0-9]*'
+      - column: 'Ref'
+        regex: '^FID'
+      - column: 'Part'
+        regex: '^mount.*hole'
+      - column: 'Part'
+        regex: 'solder.*bridge'
+      - column: 'Part'
+        regex: 'solder.*jump'
+      - column: 'Part'
+        regex: 'test.*point'
+      - column: 'FP'
+        regex: 'test.*point'
+      - column: 'FP'
+        regex: '^mount.*hole'
+      - column: 'FP'
+        regex: 'fiducial'
+
 variants:
   - name: rotated
     comment: 'Just a place holder for the rotation filter'
     type: kibom
     variant: rotated
     pre_transform: fix_rotation
+    exclude_filter: mechanical_fixed
 
 preflight:
   set_text_variables:
@@ -144,3 +169,9 @@ outputs:
         hide_pcb_info: true
         hide_stats_info: true
         quote_all: true
+  - name: 'ibom'
+    comment: "Interactive BOM for Hand Assembly"
+    type: ibom
+    run_by_default: false
+    options:
+      layer_view: 'B'
