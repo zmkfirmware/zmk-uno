@@ -14,7 +14,7 @@ filters:
       - ["^SMDIP-4.*", 180.0]
       - ["^SOT-23", 0.0]
       - ["^D_.*", 180.0]
-      - ["^TSSOP-24_.*", 180.0]
+      - ["^TSSOP-24_.*", 90.0]
 
   - name: only_jlc_parts
     comment: 'Only parts with JLC code'
