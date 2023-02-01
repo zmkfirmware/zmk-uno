@@ -4706,7 +4706,7 @@
     (property "Reference" "R6" (id 0) (at 188.595 149.2249 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "2M" (id 1) (at 188.595 151.7649 0)
+    (property "Value" "10k" (id 1) (at 188.595 151.7649 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (id 2) (at 186.055 150.495 0)
@@ -4715,7 +4715,7 @@
     (property "Datasheet" "~" (id 3) (at 186.055 150.495 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC Part Number" "C26112" (id 4) (at 186.055 150.495 0)
+    (property "LCSC Part Number" "C17414" (id 4) (at 186.055 150.495 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d8bcf51a-39d1-4109-a71f-20566739d4d3))
@@ -6411,7 +6411,7 @@
       (reference "R5") (unit 1) (value "150") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/16bc965e-0905-4094-9890-53ba2d094230"
-      (reference "R6") (unit 1) (value "2M") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R6") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/89a985b4-b39e-44d9-9723-fb5fd730d928"
       (reference "R7") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0603_1608Metric")
