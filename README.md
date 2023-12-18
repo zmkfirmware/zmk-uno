@@ -83,6 +83,7 @@ To fetch the various footprint libraries used by the project.
 | 3        | Switch Mode Selection Headers  |                  | 1x8 2mm pitch pin headers                 |
 | 1        | Reset Button                   | C79174           | EVQPUC02K                                 |
 | 11       | Pin Jumpers For Mode Selection |                  | 2mm-pitch pin jumpers (e.g. SPN02SXCN-RC) |
+| 1        | Direct/martrix selection IC    | C2673317         | TS3A27518EPW                              |
 | 1        | LED Resistor                   |                  | 500Ω (0805)                               |
 | 1        | Power Cutoff Resistor          |                  | 2MΩ (0805)                                |
 | 1        | Power Cutoff MOSFET            | C15127           | AO3401A                                   |
