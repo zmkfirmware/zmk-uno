@@ -12,7 +12,7 @@ jobs:
       image: docker.io/setsoft/kicad_auto:dev_k6
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Run kibot
         run: kibot -vvv
       - name: Archive Gerber ZIP
@@ -21,7 +21,7 @@ jobs:
           name: jlc
           path: JLCPCB/zmk-uno-JLCPCB.zip
       - name: Archive Positions/BOM
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: jlc
           path: zmk-uno_*jlc.csv
